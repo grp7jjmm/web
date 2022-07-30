@@ -10,7 +10,7 @@ public class Web {
 		options.addArguments("--headless");
 		options.addArguments("--disable-extensions"); // disabling extensions
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-		option.add_argument("--remote-debugging-port=9222")
+		option.add_argument("--remote-debugging-port=9222");
 		
 		
 		WebDriver driver = new ChromeDriver(options);
