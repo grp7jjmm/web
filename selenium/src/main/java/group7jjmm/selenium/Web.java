@@ -14,7 +14,7 @@ public class Web {
 		options.addArguments("--remote-debugging-port=9222");
 		
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("http://localhost:8081/mvnwebapp");
