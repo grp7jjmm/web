@@ -6,7 +6,7 @@ public class Web {
 	public static void main(String[] args) throws InterruptedException{
 		System.setProperty("webdriver.chrome.driver", "//chromedriver//chromedriver");
 		ChromeOptions options = new ChromeOptions();
-		options.setBinary("/opt/google/chrome/google-chrome")
+		options.setBinary("/opt/google/chrome/google-chrome");
 		options.addArguments("--no-sandbox"); // Bypass OS security model
 		options.addArguments("--headless");
 		options.addArguments("--disable-extensions"); // disabling extensions
