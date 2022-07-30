@@ -8,13 +8,12 @@ public class Web {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox"); // Bypass OS security model
 		options.addArguments("--headless");
-		options.addArguments("start-maximized"); // open Browser in maximized mode
 		options.addArguments("disable-infobars"); // disabling infobars
 		options.addArguments("--disable-extensions"); // disabling extensions
-		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+		options.addArguments("--disable-dev-shm-using"); // overcome limited resource problems
 		
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("http://localhost:8081/mvnwebapp");
