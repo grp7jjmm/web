@@ -8,9 +8,8 @@ public class Web {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox"); // Bypass OS security model
 		options.addArguments("--headless");
-		options.addArguments("disable-infobars"); // disabling infobars
 		options.addArguments("--disable-extensions"); // disabling extensions
-		options.addArguments("--disable-dev-shm-using"); // overcome limited resource problems
+		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		
 		
 		WebDriver driver = new ChromeDriver(options);
