@@ -8,7 +8,7 @@ public class Web {
 		ChromeOptions options = new ChromeOptions();
 		options.setBinary("/opt/google/chrome/google-chrome");
 		options.addArguments("--no-sandbox"); // Bypass OS security model
-		options.addArguments("--headless");
+		//options.addArguments("--headless");
 		options.addArguments("--disable-extensions"); // disabling extensions
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		options.addArguments("--remote-debugging-port=9222");
