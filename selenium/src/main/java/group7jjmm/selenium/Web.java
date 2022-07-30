@@ -15,7 +15,6 @@ public class Web {
 		
 		
 		WebDriver driver = new ChromeDriver(options);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("http://localhost:8081/mvnwebapp");
