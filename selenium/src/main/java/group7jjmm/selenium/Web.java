@@ -14,7 +14,7 @@ public class Web {
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		
 		
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("http://localhost:8081/mvnwebapp");
