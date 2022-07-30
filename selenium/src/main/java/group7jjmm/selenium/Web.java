@@ -11,6 +11,7 @@ public class Web {
 		options.addArguments("--disable-extensions"); // disabling extensions
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		options.addArguments("--no-sandbox"); // Bypass OS security model
+		options.addArguments("--headless");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
