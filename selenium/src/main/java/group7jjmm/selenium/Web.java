@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.WebDriver;
 public class Web {
 	public static void main(String[] args) throws InterruptedException{
-		System.setProperty("webdriver.chrome.driver", "C:\Users\grp7j\Downloads\chromedriver\chromedriver");
+		System.setProperty("webdriver.chrome.driver", "C://Users//grp7j//Downloads//chromedriver//chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.setBinary("/opt/google/chrome/google-chrome");
 		options.addArguments("--no-sandbox"); // Bypass OS security model
